@@ -63,7 +63,7 @@ def tidy_data(df):
 
 def save_data(df, path):
     """Save the table as a CSV file."""
-    path.parent.mkdir(exist_ok=True, parents=True)
+    path.parent.mkdir(exist_ok=True)
     df.to_csv(path, index=False)
     print(f"Saved {len(df)} rows to {path}")
 
